@@ -23,7 +23,7 @@ app.get('/', function (req, res){
 
 app.get('/send', function (req, res) {
     
-  res.sendFile(__dirname + 'docs/index.html');
+  res.sendFile(__dirname + '/index.html');
 })
 
 //app.listen(3000)
