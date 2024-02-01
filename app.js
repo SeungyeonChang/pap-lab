@@ -16,14 +16,14 @@ let myTypeServer ="Type 5 (The Investigator)";
 
 app.get('/', function (req, res){
   res.render('index', {
-    'myTypeClient': myTypeServer
+    myTypeClient: myTypeServer
   })
 });
 
 
 app.get('/send', function (req, res) {
     
-  res.sendFile(__dirname+'/index.html')
+  res.send('Hello World from Express <br> <a href = "/">home</a>')
 })
 
 //app.listen(3000)
