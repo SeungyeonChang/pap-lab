@@ -6,6 +6,7 @@
 
 </head>
 <body>
+  <%- include('partials/header.ejs',{paramName: paramValue}) %>
   <h1>Hello from EJS!</h1>
   <p><%=myResultClient.length %></p>
   <p>Hello, This is <strong><%= myResultClient[0].name %></strong>.</p>
