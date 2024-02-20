@@ -7,11 +7,13 @@
 </head>
 <body>
   <h1>Hello from EJS!</h1>
-  <p>Hello, This is <strong>Seungyeon.</strong></p>
+  <p><%=myResultClient.length %></p>
+  <p>Hello, This is <strong><%= myResultClient[0].name %></strong>.</p>
   <p>I am a <%= myTypeClient %>.</p>
 
   <hr>
-  <%= myResultClient %>
+  <li><%= myResultClient[0].name %></li>
+  <!-- <%= myResultClient %> -->
 
   
 

@@ -21,7 +21,7 @@ let myTypeServer ="Type 5 (The Investigator)";
 app.get('/', function (req, res){
   res.render('index', {
     myTypeClient: myTypeServer,
-    myResultClient: myTypeServer
+    // myResultClient: myTypeServer
   })
 });
 
@@ -46,7 +46,7 @@ async function run() {
     .find()
     .toArray();
 
-    console.log("cxnDB result: ", result);
+    // console.log("cxnDB result: ", result);
     return result;
 
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
@@ -55,7 +55,7 @@ async function run() {
     await client.close();
   }
 }
-run().catch(console.dir);
+// run().catch(console.dir);
 
 app.get('/read', async (req,res)=>{
   
@@ -69,6 +69,8 @@ app.get('/read', async (req,res)=>{
   });
 
 });
+
+run().catch(console.dir);
 
 app.get('/send', function (req, res) {
     
